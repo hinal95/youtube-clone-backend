@@ -32,7 +32,7 @@ app.get('/', (req, res) => {
     res.send("Welcome to API");
 });
 
-const PORT =5050;
+const PORT = process.env.PORT || 5050;
 app.listen(PORT,()=>{
     console.log(`SERVER IS RUNNING ${PORT}`)
 })
