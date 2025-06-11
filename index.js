@@ -9,7 +9,7 @@ import { videoRoute } from './routes/video.route.js';
 
 
 const app = express();
-app.use(cors({ origin: 'http://localhost:5173',
+app.use(cors({ origin: 'https://youtube-clone-26rh.vercel.app',
      credentials: true }));
 dotenv.config();
 app.use(express.json());
