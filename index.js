@@ -9,7 +9,7 @@ import { videoRoute } from './routes/video.route.js';
 
 
 const app = express();
-app.use(cors({ origin: 'https://youtube-clone-26rh.vercel.app',
+app.use(cors({ origin: 'http://localhost:5173',
      credentials: true }));
 dotenv.config();
 app.use(express.json());
@@ -32,7 +32,7 @@ app.get('/', (req, res) => {
     res.send("Welcome to API");
 });
 
-const PORT = process.env.PORT || 5050;
+const PORT =  5050;
 app.listen(PORT,()=>{
     console.log(`SERVER IS RUNNING ${PORT}`)
 })
